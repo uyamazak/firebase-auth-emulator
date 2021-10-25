@@ -13,8 +13,6 @@ jobs:
       - name: Push to GitHub Container Registry
         uses: docker/build-push-action@v1
         with:
-          username: ${{ github.actor }}
-          password: ${{ GITHUB_TOKEN }}
           registry: ghcr.io
           repository: uyamazak/firebase-auth-emulator
           tag_with_ref: true
