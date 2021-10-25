@@ -4,3 +4,4 @@ RUN apt-get update && \
   npm install -g firebase-tools
 COPY firebase.json .
 EXPOSE 9099
+ENTRYPOINT [ "firebase", "emulators:start", "--only", "auth" ]
