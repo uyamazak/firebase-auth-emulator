@@ -1,7 +1,12 @@
-# firebase-auth-emulator
-Only auth server of Firebase Local Emulator Suite for CI testing.
+# firebase-auth-emulator (and storage)
+Not Only auth server but also storage of Firebase Local Emulator Suite for CI testing.
 
+# Local Docker
+```
+docker build -t firebase-auth-emulator:latest .
 
+docker run firebase-auth-emulator:latest --project your-firebase-project-name
+```
 # How to Use (CircleCI)
 
 .circleci/config.ym
