@@ -1,2 +1,4 @@
 # firebase-auth-emulator
-Only auth server of Firebase Local Emulator Suite for CI testing.
+Docker image of Firebase Local Emulator Suite for CI testing.
+
+Not only is auth working, but also storage.
